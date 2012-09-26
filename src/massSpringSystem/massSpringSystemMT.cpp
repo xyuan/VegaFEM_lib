@@ -34,8 +34,8 @@
 #include <pthread.h>
 #include <vector>
 #include <set>
-#include "macros.h"
-#include "massSpringSystemMT.h"
+#include "include/macros.h"
+#include "massSpringSystem/massSpringSystemMT.h"
 using namespace std;
 
 //#include "performanceCounter.h"

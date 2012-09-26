@@ -26,8 +26,8 @@
  *                                                                       *
  *************************************************************************/
 
-#include "StVKHessianTensor.h"
-#include "volumetricMeshENuMaterial.h"
+#include "stvk/StVKHessianTensor.h"
+#include "volumetricMesh/volumetricMeshENuMaterial.h"
 
 #define QUADRATICFORM(m,x,y)\
   m[0] * x[0] * y[0] + \

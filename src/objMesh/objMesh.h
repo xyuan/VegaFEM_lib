@@ -41,7 +41,7 @@
 #include <iostream>
 #include <algorithm>
 #include <assert.h>
-#include "minivector.h"
+#include "minivector/minivector.h"
 
 /*
    This class stores a 3D surface mesh, loaded from an .obj file.  

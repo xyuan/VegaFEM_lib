@@ -36,9 +36,9 @@
 #ifndef _INTEGRATORBASESPARSE_H_
 #define _INTEGRATORBASESPARSE_H_
 
-#include "sparseMatrix.h"
-#include "forceModel.h"
-#include "integratorBase.h"
+#include "sparseMatrix/sparseMatrix.h"
+#include "forceModel/forceModel.h"
+#include "integrator/integratorBase.h"
 
 class IntegratorBaseSparse : public IntegratorBase
 {

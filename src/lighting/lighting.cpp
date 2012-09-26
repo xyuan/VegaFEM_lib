@@ -30,8 +30,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <float.h>
-#include "configFile.h"
-#include "lighting.h"
+#include "configFile/configFile.h"
+#include "lighting/lighting.h"
 
 Lighting::Lighting(char * configFilename)
 {

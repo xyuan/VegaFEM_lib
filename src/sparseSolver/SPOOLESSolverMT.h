@@ -47,8 +47,8 @@ However, for very large systems (e.g. 200,000 x 200,000 matrices on a
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "sparseMatrix.h"
-#include "linearSolver.h"
+#include "sparseMatrix/sparseMatrix.h"
+#include "sparseSolver/linearSolver.h"
 
 class SPOOLESSolverMT : public LinearSolver
 {

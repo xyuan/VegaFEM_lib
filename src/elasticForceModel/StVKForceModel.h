@@ -33,9 +33,9 @@
 #ifndef _STVKFORCEMODEL_H_
 #define _STVKFORCEMODEL_H_
 
-#include "StVKInternalForces.h"
-#include "StVKStiffnessMatrix.h"
-#include "forceModel.h"
+#include "stvk/StVKInternalForces.h"
+#include "stvk/StVKStiffnessMatrix.h"
+#include "forceModel/forceModel.h"
 
 class StVKForceModel : virtual public ForceModel
 {

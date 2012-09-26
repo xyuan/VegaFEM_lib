@@ -29,11 +29,11 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "corotationalLinearFEM.h"
-#include "polarDecomposition.h"
-#include "matrixMultiplyMacros.h"
-#include "mat3d.h"
-#include "volumetricMeshENuMaterial.h"
+#include "corotationalLinearFEM/corotationalLinearFEM.h"
+#include "polarDecomposition/polarDecomposition.h"
+#include "include/matrixMultiplyMacros.h"
+#include "minivector/mat3d.h"
+#include "volumetricMesh/volumetricMeshENuMaterial.h"
 
 CorotationalLinearFEM::CorotationalLinearFEM(TetMesh * tetMesh_) : tetMesh(tetMesh_) 
 {

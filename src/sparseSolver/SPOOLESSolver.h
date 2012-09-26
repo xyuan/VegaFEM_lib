@@ -48,8 +48,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "linearSolver.h"
-#include "sparseMatrix.h"
+#include "sparseSolver/linearSolver.h"
+#include "sparseMatrix/sparseMatrix.h"
 
 class SPOOLESSolver : public LinearSolver
 {

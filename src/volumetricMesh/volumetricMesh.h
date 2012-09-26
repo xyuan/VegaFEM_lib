@@ -53,7 +53,7 @@
 #include <set>
 #include <string>
 #include <map>
-#include "minivector.h"
+#include "minivector/minivector.h"
 
 class VolumetricMesh
 {

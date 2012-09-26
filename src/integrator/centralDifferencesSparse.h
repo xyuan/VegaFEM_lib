@@ -63,8 +63,8 @@ See also integratorBase.h .
 #ifndef _CENTRALDIFFERENCESSPARSE_H_
 #define _CENTRALDIFFERENCESSPARSE_H_
 
-#include "integratorBaseSparse.h"
-#include "integratorSolverSelection.h"
+#include "integrator/integratorBaseSparse.h"
+#include "integrator/integratorSolverSelection.h"
 
 #ifdef PARDISO
   #include "sparseSolvers.h"
@@ -73,7 +73,7 @@ See also integratorBase.h .
   #include "sparseSolvers.h"
 #endif
 #ifdef PCG
-  #include "CGSolver.h"
+  #include "sparseSolver/CGSolver.h"
 #endif
 
 class CentralDifferencesSparse : public IntegratorBaseSparse

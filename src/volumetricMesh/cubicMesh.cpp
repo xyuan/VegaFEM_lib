@@ -33,9 +33,9 @@
 #include <map>
 #include <vector>
 #include <algorithm>
-#include "cubicMesh.h"
-#include "matrixMacros.h"
-#include "triple.h"
+#include "volumetricMesh/cubicMesh.h"
+#include "matrix/matrixMacros.h"
+#include "include/triple.h"
 using namespace std;
 
 const VolumetricMesh::elementType CubicMesh::elementType_ = CUBIC;

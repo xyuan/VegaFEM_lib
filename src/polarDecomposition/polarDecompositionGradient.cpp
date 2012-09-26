@@ -49,9 +49,9 @@
   Authors of this code: Jernej Barbic, Yili Zhao
 */
 
-#include "polarDecompositionGradient.h"
-#include "matrixMultiplyMacros.h"
-#include "mat3d.h"
+#include "polarDecomposition/polarDecompositionGradient.h"
+#include "include/matrixMultiplyMacros.h"
+#include "minivector/mat3d.h"
 
 void PolarDecompositionGradient::Compute(const double * M, const double * Q, const double * S, const double * MDot, double * omega, double * QDot, double * SDot, const double * MDotDot, double * omegaDot, double * QDotDot)
 {

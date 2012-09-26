@@ -26,8 +26,8 @@
  *                                                                       *
  *************************************************************************/
 
-#include "StVKInternalForces.h"
-#include "volumetricMeshENuMaterial.h"
+#include "stvk/StVKInternalForces.h"
+#include "volumetricMesh/volumetricMeshENuMaterial.h"
 
 StVKInternalForces::StVKInternalForces(VolumetricMesh * volumetricMesh_, StVKElementABCD * precomputedABCDIntegrals_, bool addGravity_, double g_): volumetricMesh(volumetricMesh_), precomputedIntegrals(precomputedABCDIntegrals_), gravityForce(NULL), addGravity(addGravity_), g(g_) 
 {

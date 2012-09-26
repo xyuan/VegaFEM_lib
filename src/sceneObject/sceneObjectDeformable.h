@@ -34,8 +34,8 @@
 #ifndef _SCENEOBJECTDEFORMABLE_H_
 #define _SCENEOBJECTDEFORMABLE_H_
 
-#include "lighting.h"
-#include "sceneObjectWithRestPosition.h"
+#include "lighting/lighting.h"
+#include "sceneObject/sceneObjectWithRestPosition.h"
 
 class SceneObjectDeformable : public virtual SceneObjectWithRestPosition
 {

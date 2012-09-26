@@ -55,9 +55,9 @@
 // SPOOLES is available at: http://www.netlib.org/linalg/spooles/spooles.2.2.html
 // For PARDISO, the class was tested with the PARDISO implementation from the Intel Math Kernel Library
 
-#include "integratorSolverSelection.h"
-#include "sparseMatrix.h"
-#include "integratorBaseSparse.h"
+#include "integrator/integratorSolverSelection.h"
+#include "sparseMatrix/sparseMatrix.h"
+#include "integrator/integratorBaseSparse.h"
 
 #ifdef PARDISO
   #include "sparseSolvers.h"
@@ -66,7 +66,7 @@
   #include "sparseSolvers.h"
 #endif
 #ifdef PCG
-  #include "CGSolver.h"
+  #include "sparseSolver/CGSolver.h"
 #endif
 
 class ImplicitNewmarkSparse : public IntegratorBaseSparse

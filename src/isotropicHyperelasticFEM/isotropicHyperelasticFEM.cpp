@@ -26,8 +26,8 @@
  *                                                                       *
  *************************************************************************/
 
-#include "isotropicHyperelasticFEM.h"
-#include "matrixIO.h"
+#include "isotropicHyperelasticFEM/isotropicHyperelasticFEM.h"
+#include "matrix/matrixIO.h"
 
 IsotropicHyperelasticFEM::IsotropicHyperelasticFEM(TetMesh * tetMesh_, IsotropicMaterial * isotropicMaterial_, double principalStretchThreshold_, bool addGravity_, double g_) :
   tetMesh(tetMesh_),

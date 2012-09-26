@@ -40,8 +40,8 @@
 
 */
 
-#include "linearSolver.h"
-#include "sparseMatrix.h"
+#include "sparseSolver/linearSolver.h"
+#include "sparseMatrix/sparseMatrix.h"
 
 #define MKL_INT int
 

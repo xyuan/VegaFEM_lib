@@ -2,7 +2,7 @@
  *                                                                       *
  * Vega FEM Simulation Library Version 1.1                               *
  *                                                                       *
- * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2012 USC     *
+ * "macros" include file, Copyright (C) 2007 CMU, 2009 MIT, 2012 USC     *
  * All rights reserved.                                                  *
  *                                                                       *
  * Code author: Jernej Barbic                                            *
@@ -26,36 +26,35 @@
  *                                                                       *
  *************************************************************************/
 
-#include "elasticForceModel/linearFEMForceModel.h"
-#include "stvk/StVKStiffnessMatrix.h"
+#ifndef _MACROS_H_
+#define _MACROS_H_
 
-LinearFEMForceModel::LinearFEMForceModel(StVKInternalForces * stVKInternalForces) 
-{
-  StVKStiffnessMatrix * stVKStiffnessMatrix = new StVKStiffnessMatrix(stVKInternalForces);
-  stVKStiffnessMatrix->GetStiffnessMatrixTopology(&K);
-  double * zero = (double*) calloc (K->GetNumRows(), sizeof(double));
-  stVKStiffnessMatrix->ComputeStiffnessMatrix(zero, K);
-  free(zero);
-  delete(stVKStiffnessMatrix);
-}
+#ifndef PI
+  #define PI 3.141592653589793238462643
+#endif
 
-LinearFEMForceModel::~LinearFEMForceModel()
-{
-  delete(K);
-}
+#ifndef M_PI
+  #define M_PI 3.141592653589793238462643
+#endif
 
-void LinearFEMForceModel::GetInternalForce(double * u, double * internalForces)
-{
-  K->MultiplyVector(u, internalForces);
-}
+#define DOTPRODUCT(x1,y1,z1,x2,y2,z2)\
+\
+  ((x1)*(x2) + (y1)*(y2) + (z1)*(z2))
 
-void LinearFEMForceModel::GetTangentStiffnessMatrixTopology(SparseMatrix ** tangentStiffnessMatrix)
-{
-  *tangentStiffnessMatrix = new SparseMatrix(*K);
-}
+#define CROSSPRODUCT(x1,y1,z1,x2,y2,z2,x,y,z)\
+\
+  x = (y1) * (z2) - (y2) * (z1);\
+  y = (x2) * (z1) - (x1) * (z2);\
+  z = (x1) * (y2) - (x2) * (y1)
 
-void LinearFEMForceModel::GetTangentStiffnessMatrix(double * u, SparseMatrix * tangentStiffnessMatrix)
-{
-  *tangentStiffnessMatrix = *K;
-} 
+#define CROSSPRODUCT_ADD(x1,y1,z1,x2,y2,z2,x,y,z)\
+\
+  (x) += (y1) * (z2) - (y2) * (z1);\
+  (y) += (x2) * (z1) - (x1) * (z2);\
+  (z) += (x1) * (y2) - (x2) * (y1)
+
+#define XSTR11(s) STR11(s)
+#define STR11(s) #s
+
+#endif
 

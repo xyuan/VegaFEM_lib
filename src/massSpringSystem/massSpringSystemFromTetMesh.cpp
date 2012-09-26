@@ -27,8 +27,8 @@
  *                                                                       *
  *************************************************************************/
 
-#include "tetMesh.h"
-#include "massSpringSystemFromTetMesh.h"
+#include "volumetricMesh/tetMesh.h"
+#include "massSpringSystem/massSpringSystemFromTetMesh.h"
 
 int MassSpringSystemFromTetMesh::GenerateMassSpringSystem(TetMesh * tetMesh, MassSpringSystem ** massSpringSystem, double density, double tensileStiffness, double damping, int addGravity)
 {

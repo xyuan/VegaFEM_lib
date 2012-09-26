@@ -46,8 +46,8 @@
   but large deformations are not well-represented.
 */
 
-#include "tetMesh.h"
-#include "sparseMatrix.h"
+#include "volumetricMesh/tetMesh.h"
+#include "sparseMatrix/sparseMatrix.h"
 
 class CorotationalLinearFEM
 {

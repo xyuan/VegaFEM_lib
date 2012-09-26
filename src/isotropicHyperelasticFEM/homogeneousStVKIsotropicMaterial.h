@@ -29,8 +29,8 @@
 #ifndef _HOMOGENEOUSISOTROPICSTVKMATERIAL_H_
 #define _HOMOGENEOUSISOTROPICSTVKMATERIAL_H_
 
-#include "isotropicMaterial.h"
-#include "tetMesh.h"
+#include "isotropicHyperelasticFEM/isotropicMaterial.h"
+#include "volumetricMesh/tetMesh.h"
 
 /*
    Homogeneous StVK material. Material properties are constant throughout the mesh.

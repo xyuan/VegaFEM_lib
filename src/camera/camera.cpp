@@ -43,9 +43,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <float.h>
-#include "camera.h"
-#include "openGL-headers.h"
-#include "macros.h"
+#include "camera/camera.h"
+#include "include/openGL-headers.h"
+#include "include/macros.h"
 
 SphericalCamera::SphericalCamera(double R, double Phi, double Theta, double * focusPosition_, double * up_, double movementSensitivity_, double camera2WorldScalingFactor_): R0(R), Phi0(Phi), Theta0(Theta), movementSensitivity(movementSensitivity_), camera2WorldScalingFactor(camera2WorldScalingFactor_)
 {

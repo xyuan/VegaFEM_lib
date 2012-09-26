@@ -33,8 +33,8 @@
 #include <pthread.h>
 #include <vector>
 #include <set>
-#include "macros.h"
-#include "corotationalLinearFEMMT.h"
+#include "include/macros.h"
+#include "corotationalLinearFEM/corotationalLinearFEMMT.h"
 using namespace std;
 
 CorotationalLinearFEMMT::CorotationalLinearFEMMT(TetMesh * tetMesh, int numThreads_) : CorotationalLinearFEM(tetMesh), numThreads(numThreads_)

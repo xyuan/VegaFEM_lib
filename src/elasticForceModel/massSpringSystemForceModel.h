@@ -33,8 +33,8 @@
 #ifndef _MASSSPRINGSYSTEMFORCEMODEL_H_
 #define _MASSSPRINGSYSTEMFORCEMODEL_H_
 
-#include "massSpringSystem.h"
-#include "forceModel.h"
+#include "massSpringSystem/massSpringSystem.h"
+#include "forceModel/forceModel.h"
 
 class MassSpringSystemForceModel : public virtual ForceModel
 {

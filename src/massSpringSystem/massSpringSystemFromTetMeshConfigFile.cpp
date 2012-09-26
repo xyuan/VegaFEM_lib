@@ -27,10 +27,10 @@
  *                                                                       *
  *************************************************************************/
 
-#include "tetMesh.h"
-#include "configFile.h"
-#include "massSpringSystemFromTetMesh.h"
-#include "massSpringSystemFromTetMeshConfigFile.h"
+#include "volumetricMesh/tetMesh.h"
+#include "configFile/configFile.h"
+#include "massSpringSystem/massSpringSystemFromTetMesh.h"
+#include "massSpringSystem/massSpringSystemFromTetMeshConfigFile.h"
 
 char * MassSpringSystemFromTetMeshConfigFile::DuplicateString(char * s)
 {

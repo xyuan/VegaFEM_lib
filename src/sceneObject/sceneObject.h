@@ -38,10 +38,10 @@
   #include <windows.h>
 #endif
 
-#include "macros.h"
-#include "objMesh.h"
-#include "objMeshRender.h"
-#include "minivector.h"
+#include "include/macros.h"
+#include "objMesh/objMesh.h"
+#include "objMesh/objMeshRender.h"
+#include "minivector/minivector.h"
 
 class SceneObject
 {

@@ -34,8 +34,8 @@
 #ifndef _STVKELEMENTABCDLOADER_H_
 #define _STVKELEMENTABCDLOADER_H_
 
-#include "volumetricMesh.h"
-#include "StVKElementABCD.h"
+#include "volumetricMesh/volumetricMesh.h"
+#include "stvk/StVKElementABCD.h"
 
 class StVKElementABCDLoader
 {

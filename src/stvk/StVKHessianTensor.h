@@ -34,11 +34,11 @@
   See also StVKInternalForces.h .
 */
 
-#include "triple.h"
-#include "sparseMatrix.h"
-#include "volumetricMesh.h"
-#include "StVKElementABCD.h"
-#include "StVKStiffnessMatrix.h"
+#include "include/triple.h"
+#include "sparseMatrix/sparseMatrix.h"
+#include "volumetricMesh/volumetricMesh.h"
+#include "stvk/StVKElementABCD.h"
+#include "stvk/StVKStiffnessMatrix.h"
 
 class StVKHessianTensor
 {

@@ -26,8 +26,8 @@
  *                                                                       *
  *************************************************************************/
 
-#include "StVKStiffnessMatrix.h"
-#include "volumetricMeshENuMaterial.h"
+#include "stvk/StVKStiffnessMatrix.h"
+#include "volumetricMesh/volumetricMeshENuMaterial.h"
 
 StVKStiffnessMatrix::StVKStiffnessMatrix(StVKInternalForces *  stVKInternalForces)
 {

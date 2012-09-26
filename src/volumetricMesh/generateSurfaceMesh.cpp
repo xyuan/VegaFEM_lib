@@ -27,9 +27,9 @@
  *************************************************************************/
 
 #include <float.h>
-#include "objMesh.h"
-#include "generateSurfaceMesh.h"
-#include "cubicMesh.h"
+#include "objMesh/objMesh.h"
+#include "volumetricMesh/generateSurfaceMesh.h"
+#include "volumetricMesh/cubicMesh.h"
 using namespace std;
 
 // classes to disambiguate and sort faces

@@ -29,7 +29,7 @@
 #ifndef _STVKELEMENTABCD_H_
 #define _STVKELEMENTABCD_H_
 
-#include "minivector.h"
+#include "minivector/minivector.h"
 
 /*
   This abstract class serves as storage space for the St.Venant-Kirchhoff A,B,C,D coefficients for a mesh element. 

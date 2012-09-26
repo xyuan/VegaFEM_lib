@@ -41,8 +41,8 @@
 #ifndef _EULERSPARSE_H_
 #define _EULERSPARSE_H_
 
-#include "integratorSolverSelection.h"
-#include "integratorBaseSparse.h"
+#include "integrator/integratorSolverSelection.h"
+#include "integrator/integratorBaseSparse.h"
 
 #ifdef PARDISO
   #include "sparseSolvers.h"
@@ -51,7 +51,7 @@
   #include "sparseSolvers.h"
 #endif
 #ifdef PCG
-  #include "CGSolver.h"
+  #include "sparseSolver/CGSolver.h"
 #endif
 
 

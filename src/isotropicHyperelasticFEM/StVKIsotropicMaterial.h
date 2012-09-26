@@ -29,8 +29,8 @@
 #ifndef _STVKISOTROPICMATERIAL_H_
 #define _STVKISOTROPICMATERIAL_H_
 
-#include "isotropicMaterial.h"
-#include "tetMesh.h"
+#include "isotropicHyperelasticFEM/isotropicMaterial.h"
+#include "volumetricMesh/tetMesh.h"
 
 /*
    StVK material. Material properties are read from the tet mesh, and can be heterogeneous.

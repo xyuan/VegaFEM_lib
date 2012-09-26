@@ -46,8 +46,8 @@
 #ifndef _CGSOLVER_H_
 #define _CGSOLVER_H_
 
-#include "linearSolver.h"
-#include "sparseMatrix.h"
+#include "sparseSolver/linearSolver.h"
+#include "sparseMatrix/sparseMatrix.h"
 
 class CGSolver : public LinearSolver
 {

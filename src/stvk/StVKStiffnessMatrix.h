@@ -36,8 +36,8 @@
 #ifndef _STVKSTIFFNESSMATRIX_H_
 #define _STVKSTIFFNESSMATRIX_H_
 
-#include "sparseMatrix.h"
-#include "StVKInternalForces.h"
+#include "sparseMatrix/sparseMatrix.h"
+#include "stvk/StVKInternalForces.h"
 
 class StVKStiffnessMatrix
 {

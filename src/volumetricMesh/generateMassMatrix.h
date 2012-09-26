@@ -34,8 +34,8 @@
 #ifndef _GENERATEMASSMATRIX_H_
 #define _GENERATEMASSMATRIX_H_
 
-#include "volumetricMesh.h"
-#include "sparseMatrix.h"
+#include "volumetricMesh/volumetricMesh.h"
+#include "sparseMatrix/sparseMatrix.h"
 
 class GenerateMassMatrix
 {

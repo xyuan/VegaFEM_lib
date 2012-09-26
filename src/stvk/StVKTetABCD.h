@@ -29,8 +29,8 @@
 #ifndef _STVKTETABCD_H_
 #define _STVKTETABCD_H_
 
-#include "StVKElementABCD.h"
-#include "tetMesh.h"
+#include "stvk/StVKElementABCD.h"
+#include "volumetricMesh/tetMesh.h"
 
 /*
   This class stores the St.Venant-Kirchhoff A,B,C,D coefficients for a tetrahedral element.

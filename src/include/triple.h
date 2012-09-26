@@ -2,7 +2,7 @@
  *                                                                       *
  * Vega FEM Simulation Library Version 1.1                               *
  *                                                                       *
- * "forceModel" library , Copyright (C) 2007 CMU, 2009 MIT, 2012 USC     *
+ * "triple" include file, Copyright (C) 2007 CMU, 2009 MIT, 2012 USC     *
  * All rights reserved.                                                  *
  *                                                                       *
  * Code author: Jernej Barbic                                            *
@@ -26,36 +26,52 @@
  *                                                                       *
  *************************************************************************/
 
-#include "elasticForceModel/linearFEMForceModel.h"
-#include "stvk/StVKStiffnessMatrix.h"
+#ifndef _TRIPLE_H_
+#define _TRIPLE_H_
 
-LinearFEMForceModel::LinearFEMForceModel(StVKInternalForces * stVKInternalForces) 
-{
-  StVKStiffnessMatrix * stVKStiffnessMatrix = new StVKStiffnessMatrix(stVKInternalForces);
-  stVKStiffnessMatrix->GetStiffnessMatrixTopology(&K);
-  double * zero = (double*) calloc (K->GetNumRows(), sizeof(double));
-  stVKStiffnessMatrix->ComputeStiffnessMatrix(zero, K);
-  free(zero);
-  delete(stVKStiffnessMatrix);
-}
+// "triple" template, inspired by the STL pair template
 
-LinearFEMForceModel::~LinearFEMForceModel()
+template <class A, class B, class C>
+class triple
 {
-  delete(K);
-}
+public:
+  // constructors
+  triple() : first(A()), second(B()), third(C()) {}
+  triple(const A & first_, const B & second_, const C & third_) : first(first_), second(second_), third(third_) {}
 
-void LinearFEMForceModel::GetInternalForce(double * u, double * internalForces)
-{
-  K->MultiplyVector(u, internalForces);
-}
+  // copy constructor 
+  triple(const triple & x) : first(x.first), second(x.second), third(x.third) {}
 
-void LinearFEMForceModel::GetTangentStiffnessMatrixTopology(SparseMatrix ** tangentStiffnessMatrix)
-{
-  *tangentStiffnessMatrix = new SparseMatrix(*K);
-}
+  // operators
+  inline triple & operator= (const triple & x) { first = x.first; second = x.second; third = x.third; return *this; }
+  inline bool operator== (const triple & x) const { return ((first == x.first) && (second == x.second) && (third == x.third)); }
+  inline bool operator!= (const triple & x) const { return ((first != x.first) || (second != x.second) || (third != x.third)); }
+  bool operator< (const triple & x) const
+  {
+    // compare first entry:
+    if (first < x.first)
+      return true;
+    if (x.first < first)
+      return false;
 
-void LinearFEMForceModel::GetTangentStiffnessMatrix(double * u, SparseMatrix * tangentStiffnessMatrix)
-{
-  *tangentStiffnessMatrix = *K;
-} 
+    // first equals x.first; must compare second entry:
+    if (second < x.second)
+      return true;
+    if (x.second < second)
+      return false;
+
+    // first equals x.first, AND second equals x.second; must compare third entry:
+    return (third < x.third);
+  }
+
+  A first;
+  B second;
+  C third;
+};
+
+// makes a triple
+template <class A, class B, class C>
+triple<A,B,C> make_triple(const A & first, const B & second, const C & third) { return triple<A,B,C>(first, second, third); }
+
+#endif
 

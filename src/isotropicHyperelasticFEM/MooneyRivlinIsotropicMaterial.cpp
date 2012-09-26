@@ -27,8 +27,8 @@
  *************************************************************************/
 
 #include <math.h>
-#include "MooneyRivlinIsotropicMaterial.h"
-#include "volumetricMeshMooneyRivlinMaterial.h"
+#include "isotropicHyperelasticFEM/MooneyRivlinIsotropicMaterial.h"
+#include "volumetricMesh/volumetricMeshMooneyRivlinMaterial.h"
 
 MooneyRivlinIsotropicMaterial::MooneyRivlinIsotropicMaterial(TetMesh * tetMesh)
 {

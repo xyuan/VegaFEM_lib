@@ -29,8 +29,8 @@
 #ifndef _NEOHOOKEANISOTROPICMATERIAL_H_
 #define _NEOHOOKEANISOTROPICMATERIAL_H_
 
-#include "tetMesh.h"
-#include "isotropicMaterial.h"
+#include "volumetricMesh/tetMesh.h"
+#include "isotropicHyperelasticFEM/isotropicMaterial.h"
 
 /*
    Neo-Hookean material. Material properties are read from the tet mesh, and can be heterogeneous.

@@ -26,12 +26,12 @@
  *                                                                       *
  *************************************************************************/
 
-#include "StVKElementABCDLoader.h"
-#include "StVKCubeABCD.h"
-#include "StVKTetABCD.h"
-#include "StVKTetHighMemoryABCD.h"
-#include "cubicMesh.h"
-#include "tetMesh.h"
+#include "stvk/StVKElementABCDLoader.h"
+#include "stvk/StVKCubeABCD.h"
+#include "stvk/StVKTetABCD.h"
+#include "stvk/StVKTetHighMemoryABCD.h"
+#include "volumetricMesh/cubicMesh.h"
+#include "volumetricMesh/tetMesh.h"
 
 StVKElementABCD * StVKElementABCDLoader::load(VolumetricMesh * volumetricMesh, unsigned int loadingFlag)
 {

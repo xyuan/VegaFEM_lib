@@ -37,7 +37,7 @@
 #include <sstream>
 #include <algorithm>
 #include <assert.h>
-#include "macros.h"
+#include "include/macros.h"
 using namespace std;
 
 #include "objMesh.h"

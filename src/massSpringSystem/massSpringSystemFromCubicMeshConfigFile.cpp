@@ -27,10 +27,10 @@
  *                                                                       *
  *************************************************************************/
 
-#include "cubicMesh.h"
-#include "configFile.h"
-#include "massSpringSystemFromCubicMesh.h"
-#include "massSpringSystemFromCubicMeshConfigFile.h"
+#include "volumetricMesh/cubicMesh.h"
+#include "configFile/configFile.h"
+#include "massSpringSystem/massSpringSystemFromCubicMesh.h"
+#include "massSpringSystem/massSpringSystemFromCubicMeshConfigFile.h"
 
 char * MassSpringSystemFromCubicMeshConfigFile::DuplicateString(char * s)
 {

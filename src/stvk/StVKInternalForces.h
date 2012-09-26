@@ -74,8 +74,8 @@ Note: all matrices are stored in the column-major order (same format as in LAPAC
 
 */
 
-#include "volumetricMesh.h"
-#include "StVKElementABCD.h"
+#include "volumetricMesh/volumetricMesh.h"
+#include "stvk/StVKElementABCD.h"
 
 class StVKInternalForces
 {

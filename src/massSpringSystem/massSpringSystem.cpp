@@ -33,8 +33,8 @@
 #include <math.h>
 #include <vector>
 #include <set>
-#include "macros.h"
-#include "massSpringSystem.h"
+#include "include/macros.h"
+#include "massSpringSystem/massSpringSystem.h"
 using namespace std;
 
 MassSpringSystem::MassSpringSystem(int numParticles_, double * masses_, double * restPositions_, int numEdges_, int * edges_, int * edgeGroups_, int numMaterialGroups_, double * groupStiffness_, double * groupDamping_, int addGravity_) : addGravity(addGravity_), g(9.81)

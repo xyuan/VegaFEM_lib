@@ -29,8 +29,8 @@
 #ifndef _MOONEYRIVLINISOTROPICMATERIAL_H_
 #define _MOONEYRIVLINISOTROPICMATERIAL_H_
 
-#include "isotropicMaterial.h"
-#include "tetMesh.h"
+#include "isotropicHyperelasticFEM/isotropicMaterial.h"
+#include "volumetricMesh/tetMesh.h"
 
 /*
   The implemented compressible Mooney-Rivlin material has the following energy function:

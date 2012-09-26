@@ -32,8 +32,8 @@
   See also sparseMatrix.h and CGSolver.h.
 */
 
-#include "sparseMatrix.h"
-#include "CGSolver.h"
+#include "sparseMatrix/sparseMatrix.h"
+#include "sparseSolver/CGSolver.h"
 
 int main()
 {

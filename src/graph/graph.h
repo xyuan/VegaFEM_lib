@@ -32,7 +32,7 @@
 #include <vector>
 #include <set>
 #include <map>
-#include "sparseMatrix.h"
+#include "sparseMatrix/sparseMatrix.h"
 
 /*
   A class to store a graph (nodes connected with edges).

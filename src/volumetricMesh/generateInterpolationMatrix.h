@@ -29,7 +29,7 @@
 #ifndef _GENERATEINTERPOLATIONMATRIX_H_
 #define _GENERATEINTERPOLATIONMATRIX_H_
 
-#include "sparseMatrix.h"
+#include "sparseMatrix/sparseMatrix.h"
 
 // creates the sparse matrix A that interpolates a quantity from volumetric 
 // mesh vertices to an embedded triangle mesh:

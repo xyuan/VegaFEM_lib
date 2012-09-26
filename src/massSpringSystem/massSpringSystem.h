@@ -43,7 +43,7 @@
 #ifndef _MASS_SPRING_SYSTEM_H_
 #define _MASS_SPRING_SYSTEM_H_
 
-#include "sparseMatrix.h"
+#include "sparseMatrix/sparseMatrix.h"
 
 enum MassSpringSystemElementType {TET, CUBE};
 

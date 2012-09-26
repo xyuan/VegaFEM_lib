@@ -29,10 +29,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "matrixIO.h"
-#include "performanceCounter.h"
-#include "insertRows.h"
-#include "implicitNewmarkSparse.h"
+#include "matrix/matrixIO.h"
+#include "performanceCounter/performanceCounter.h"
+#include "insertRows/insertRows.h"
+#include "integrator/implicitNewmarkSparse.h"
 
 ImplicitNewmarkSparse::ImplicitNewmarkSparse(int r, double timestep, SparseMatrix * massMatrix_, ForceModel * forceModel_, int positiveDefiniteSolver_, int numConstrainedDOFs_, int * constrainedDOFs_, double dampingMassCoef, double dampingStiffnessCoef, int maxIterations, double epsilon, double NewmarkBeta, double NewmarkGamma, int numSolverThreads_): IntegratorBaseSparse(r, timestep, massMatrix_, forceModel_, numConstrainedDOFs_, constrainedDOFs_, dampingMassCoef, dampingStiffnessCoef), positiveDefiniteSolver(positiveDefiniteSolver_), numSolverThreads(numSolverThreads_)
 {

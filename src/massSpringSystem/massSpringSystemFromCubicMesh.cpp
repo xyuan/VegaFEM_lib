@@ -27,8 +27,8 @@
  *                                                                       *
  *************************************************************************/
 
-#include "cubicMesh.h"
-#include "massSpringSystemFromCubicMesh.h"
+#include "volumetricMesh/cubicMesh.h"
+#include "massSpringSystem/massSpringSystemFromCubicMesh.h"
 
 int MassSpringSystemFromCubicMesh::GenerateMassSpringSystem(CubicMesh * cubicMesh, MassSpringSystem ** massSpringSystem, double density, double tensileStiffness, double damping, int addGravity)
 {

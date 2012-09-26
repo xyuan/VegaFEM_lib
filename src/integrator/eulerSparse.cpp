@@ -29,10 +29,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "matrixIO.h"
-#include "performanceCounter.h"
-#include "insertRows.h"
-#include "eulerSparse.h"
+#include "matrix/matrixIO.h"
+#include "performanceCounter/performanceCounter.h"
+#include "insertRows/insertRows.h"
+#include "integrator/eulerSparse.h"
 
 EulerSparse::EulerSparse(int r, double timestep, SparseMatrix * massMatrix_, ForceModel * forceModel_, int symplectic_, int numConstrainedDOFs_, int * constrainedDOFs_, double dampingMassCoef): IntegratorBaseSparse(r, timestep, massMatrix_, forceModel_, numConstrainedDOFs_, constrainedDOFs_, dampingMassCoef, 0.0), symplectic(symplectic_)
 {

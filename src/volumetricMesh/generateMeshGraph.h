@@ -32,8 +32,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "volumetricMesh.h"
-#include "graph.h"
+#include "volumetricMesh/volumetricMesh.h"
+#include "graph/graph.h"
 
 // generates a graph of the vertices of a volumetric mesh
 // two vertices are connected if they share an edge

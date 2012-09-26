@@ -31,9 +31,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <float.h>
-#include "sceneObject.h"
-#include "objMeshRender.h"
-#include "objMeshEncode.h"
+#include "sceneObject/sceneObject.h"
+#include "objMesh/objMeshRender.h"
+#include "objMesh/objMeshEncode.h"
 
 SceneObject::SceneObject(char * filename):
   mesh(NULL), meshRender(NULL), displayList(0), displayListExists(false), displayListEdges(0), displayListEdgesExists(false)

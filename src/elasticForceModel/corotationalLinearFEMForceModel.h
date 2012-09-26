@@ -33,8 +33,8 @@
 #ifndef _COROTATIONALLINEARFEMFORCEMODEL_H_
 #define _COROTATIONALLINEARFEMFORCEMODEL_H_
 
-#include "corotationalLinearFEM.h"
-#include "forceModel.h"
+#include "corotationalLinearFEM/corotationalLinearFEM.h"
+#include "forceModel/forceModel.h"
 
 class CorotationalLinearFEMForceModel : virtual public ForceModel
 {

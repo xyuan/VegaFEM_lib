@@ -31,9 +31,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <float.h>
-#include "performanceCounter.h"
-#include "insertRows.h"
-#include "centralDifferencesSparse.h"
+#include "performanceCounter/performanceCounter.h"
+#include "insertRows/insertRows.h"
+#include "integrator/centralDifferencesSparse.h"
 
 CentralDifferencesSparse::CentralDifferencesSparse(int numDOFs, double timestep, SparseMatrix * massMatrix_, ForceModel * forceModel_, int numConstrainedDOFs, int * constrainedDOFs, double dampingMassCoef, double dampingStiffnessCoef, int tangentialDampingMode_, int numSolverThreads_): IntegratorBaseSparse(numDOFs, timestep, massMatrix_, forceModel_, numConstrainedDOFs, constrainedDOFs, dampingMassCoef, dampingStiffnessCoef), tangentialDampingMode(tangentialDampingMode_), numSolverThreads(numSolverThreads_), timestepIndex(0)
 {
@@ -135,7 +135,7 @@ void CentralDifferencesSparse::DecomposeSystemMatrix()
 
 int CentralDifferencesSparse::DoTimestep()
 {
-  PerformanceCounter counterForceAssemblyTime;
+    PerformanceCounter counterForceAssemblyTime;
     forceModel->GetInternalForce(q, internalForces);
     for (int i=0; i<r; i++)
       internalForces[i] *= internalForceScalingFactor;

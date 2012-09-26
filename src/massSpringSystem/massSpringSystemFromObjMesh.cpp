@@ -27,8 +27,8 @@
  *                                                                       *
  *************************************************************************/
 
-#include "objMesh.h"
-#include "massSpringSystemFromObjMesh.h"
+#include "objMesh/objMesh.h"
+#include "massSpringSystem/massSpringSystemFromObjMesh.h"
 
 int MassSpringSystemFromObjMesh::GenerateMassSpringSystem(ObjMesh * quadMesh, MassSpringSystem ** massSpringSystem, double surfaceDensity, double tensileStiffness, double shearStiffness, double bendStiffness, double damping, int addGravity)
 {

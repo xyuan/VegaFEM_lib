@@ -30,8 +30,8 @@
 #ifdef WIN32
   #include <windows.h>
 #endif
-#include "openGL-headers.h"
-#include "renderSprings.h"
+#include "include/openGL-headers.h"
+#include "massSpringSystem/renderSprings.h"
 
 void RenderSprings::Render(MassSpringSystem * massSpringSystem, double * u)
 {

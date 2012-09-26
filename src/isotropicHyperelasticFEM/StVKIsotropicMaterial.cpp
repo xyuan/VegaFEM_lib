@@ -27,8 +27,8 @@
  *************************************************************************/
 
 #include <math.h>
-#include "StVKIsotropicMaterial.h"
-#include "volumetricMeshENuMaterial.h"
+#include "isotropicHyperelasticFEM/StVKIsotropicMaterial.h"
+#include "volumetricMesh/volumetricMeshENuMaterial.h"
 
 StVKIsotropicMaterial::StVKIsotropicMaterial(TetMesh * tetMesh) 
 {

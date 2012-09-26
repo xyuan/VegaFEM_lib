@@ -35,8 +35,8 @@
 #ifndef _LINEARFEMFORCEMODEL_H_
 #define _LINEARFEMFORCEMODEL_H_
 
-#include "StVKInternalForces.h"
-#include "forceModel.h"
+#include "stvk/StVKInternalForces.h"
+#include "forceModel/forceModel.h"
 
 class LinearFEMForceModel : public ForceModel
 {

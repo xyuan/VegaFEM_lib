@@ -39,8 +39,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "volumetricMesh.h"
-#include "objMesh.h"
+#include "volumetricMesh/volumetricMesh.h"
+#include "objMesh/objMesh.h"
 
 
 class GenerateSurfaceMesh

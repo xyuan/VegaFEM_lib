@@ -33,8 +33,8 @@
 #ifndef _ISOTROPICHYPERELASTICFEMFORCEMODEL_H_
 #define _ISOTROPICHYPERELASTICFEMFORCEMODEL_H_
 
-#include "isotropicHyperelasticFEM.h"
-#include "forceModel.h"
+#include "isotropicHyperelasticFEM/isotropicHyperelasticFEM.h"
+#include "forceModel/forceModel.h"
 
 class IsotropicHyperelasticFEMForceModel : virtual public ForceModel
 {

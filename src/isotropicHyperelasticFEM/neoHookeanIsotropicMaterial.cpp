@@ -27,8 +27,8 @@
  *************************************************************************/
 
 #include <math.h>
-#include "neoHookeanIsotropicMaterial.h"
-#include "volumetricMeshENuMaterial.h"
+#include "isotropicHyperelasticFEM/neoHookeanIsotropicMaterial.h"
+#include "volumetricMesh/volumetricMeshENuMaterial.h"
 
 NeoHookeanIsotropicMaterial::NeoHookeanIsotropicMaterial(TetMesh * tetMesh)
 {

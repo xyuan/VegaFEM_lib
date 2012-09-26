@@ -27,10 +27,10 @@
  *                                                                       *
  *************************************************************************/
 
-#include "objMesh.h"
-#include "configFile.h"
-#include "massSpringSystemFromObjMesh.h"
-#include "massSpringSystemFromObjMeshConfigFile.h"
+#include "objMesh/objMesh.h"
+#include "configFile/configFile.h"
+#include "massSpringSystem/massSpringSystemFromObjMesh.h"
+#include "massSpringSystem/massSpringSystemFromObjMeshConfigFile.h"
 #include <string.h>
 
 char * MassSpringSystemFromObjMeshConfigFile::DuplicateString(char * s)

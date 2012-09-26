@@ -36,7 +36,7 @@
   #include <windows.h>
 #endif
 
-#include "openGL-headers.h"
+#include "include/openGL-headers.h"
 #include <vector>
 #include <assert.h>
 #include "objMesh.h"

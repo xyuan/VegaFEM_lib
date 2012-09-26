@@ -30,9 +30,9 @@
 #define _ISOTROPICHYPERELASTICFEM_H_
 
 #include <float.h>
-#include "tetMesh.h"
-#include "sparseMatrix.h"
-#include "isotropicMaterial.h"
+#include "volumetricMesh/tetMesh.h"
+#include "sparseMatrix/sparseMatrix.h"
+#include "isotropicHyperelasticFEM/isotropicMaterial.h"
 
 /*
   Implementation of hyperelastic isotropic nonlinear FEM elasticity, using

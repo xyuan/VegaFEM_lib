@@ -76,8 +76,8 @@
   #include <windows.h>
 #endif
 
-#include "openGL-headers.h"
-#include "macros.h"
+#include "include/openGL-headers.h"
+#include "include/macros.h"
 
 class Lighting
 {

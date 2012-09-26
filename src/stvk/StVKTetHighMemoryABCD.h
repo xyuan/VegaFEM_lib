@@ -29,8 +29,8 @@
 #ifndef _STVKTETHIGHMEMORYABCD_H_
 #define _STVKTETHIGHMEMORYABCD_H_
 
-#include "StVKElementABCD.h"
-#include "tetMesh.h"
+#include "stvk/StVKElementABCD.h"
+#include "volumetricMesh/tetMesh.h"
 
 /*
   Class "StVKTetHighMemoryABCD" stores (explicitly) the St.Venant-Kirchhoff 
